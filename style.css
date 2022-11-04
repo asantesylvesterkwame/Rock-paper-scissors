@@ -4,5 +4,7 @@ body{
     background-color: rgb(34, 33, 33);
 }
 header, h1{
-    
+    color: whitesmoke;
+    text-align: center;
+    font-size: 48px;
 }
