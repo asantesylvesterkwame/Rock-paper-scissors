@@ -14,7 +14,12 @@ header, h1{
     font-weight: 300;
 }
 .boxOfImages, button{
+    display: inline;
     margin-top:100px ;
+    height: 200px;
+    width: 200px;
+    margin-left: 200px;
+    font-size: 48px
 
 
 }
