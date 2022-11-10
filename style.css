@@ -13,6 +13,9 @@ header, h1{
     text-align: center;
     font-weight: 300;
 }
+button{
+    margin-bottom: 100px;
+}
 .boxOfImages, button{
     display: inline;
     margin-top:100px ;
@@ -20,7 +23,22 @@ header, h1{
     width: 200px;
     margin-left: 200px;
     font-size: 48px
+    
 
-
+}
+.nameOfplayers, .userPlayer, .computerplayer{
+    display: inline;
+    
+}
+.userPlayer{
+    color: rgb(62, 62, 230);
+    margin-left: 600px;
+    font-size: 48px;
+}
+.computerplayer{
+    color: rgb(231, 60, 60);
+    font-size: 48px;
+    margin-left: 400px;
+    margin-bottom: 200px;
 }
 
