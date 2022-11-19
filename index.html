@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
-    <script type="text/javascript" src="script.js"></script>
     
-    <div class="header">
+    
+    <div id="header">
         <h1>THE ULTIMATE BATTLE OF ROCK PAPER SCISSORS </h1>
         <h2>Prove your worth over machines!</h2>
 
     </div>
 
-    <div class="boxOfImages" align="center">
-        <button class="firstBox">Rock</button>
-        <button class="secondBox">Paper</button>
-        <button class="thirdBox">Scissors</button>
+    <div id='boxOfImages' align="center">
+        <button id='firstBox' onclick="scoreadd ()"><img src="rock.png" alt="ROCK" width="150px" ></button>
+        <button id='secondBox'><img src="paper.png" alt="SCISSORS" width="150px"></button>
+        <button id='thirdBox'><img src="scissors.png" alt="" width="150px"></button>
 
     </div>
-    <div class="nameOfPlayers">
-        <h3 class="userPlayer">YOU</h3>
-        <h3 class="computerplayer">MR. COMPUTER</h3>
-        <div class="playerscore">0</div>
+    <div id="nameOfPlayers">
+        <h3 id="userPlayer">YOU</h3>
+        <h3 id="computerplayer">MR. COMPUTER</h3>
+        <div id="scores"> <span id="playerScore">0</span> <span id="computerScore">0</span> </div> 
+            
     </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
