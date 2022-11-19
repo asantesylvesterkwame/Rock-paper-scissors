@@ -26,7 +26,7 @@ button{
     
 
 }
-.nameOfplayers, .userPlayer, .computerplayer{
+.nameOfplayers, .userPlayer, .computerplayer, .playerscore div{
     display: inline;
     
 }
