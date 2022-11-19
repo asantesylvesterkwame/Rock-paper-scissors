@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+    flex-wrap: nowrap;
+}
 body{
     font-family: poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
     background-color: rgb(34, 33, 33);
@@ -8,7 +11,7 @@ header, h1{
     text-align: center;
     font-size: 48px;
 }
-.header, h2{
+#header, h2{
     color: whitesmoke;
     text-align: center;
     font-weight: 300;
@@ -16,32 +19,43 @@ header, h1{
 button{
     margin-bottom: 100px;
 }
-.boxOfImages, button{
+#boxOfImages, button{
     display: inline;
     margin-top:100px ;
     height: 200px;
     width: 200px;
     margin-left: 200px;
-    font-size: 48px
-    
+    background: none;
+    border: none;
+    flex-wrap: nowrap;
 
 }
-.nameOfplayers, .userPlayer, .computerplayer, .playerscore div{
+#nameOfplayers, #userPlayer, #computerplayer{
     display: inline;
     
 }
-.userPlayer{
+#userPlayer{
     color: rgb(62, 62, 230);
     margin-left: 600px;
     font-size: 48px;
 }
-.computerplayer{
+#computerplayer{
     color: rgb(231, 60, 60);
     font-size: 48px;
-    margin-left: 400px;
+    margin-left: 300px;
     margin-bottom: 200px;
 }
-.boxOfImages button:hover{
+#boxOfImages button:hover{
     transform: scale(1.2);
     transition: 300ms;
+}
+#playerScore{
+    font-size: 200px;
+    margin-left: 600px;
+    color: whitesmoke;
+}
+#computerScore{
+    font-size: 200px;
+    margin-left: 400px;
+    color: whitesmoke;
 }
