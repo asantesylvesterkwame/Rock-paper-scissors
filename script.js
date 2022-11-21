@@ -1,46 +1,83 @@
-/*const computerChoice = ['rock', 'paper', 'scissors']
-    //take random string
 
-    const list = [1, 2, 3, 4, 5, 6];
-
-    // shuffle your list with the sort function:
-    const shuffledCompChoice = computerChoice.sort(() => Math.random() - 0.) ;
-    // generate a size for the new list
-    const newCompChoiceSize = Math.floor(Math.random() * computerChoice.length)
-    // pick the first "newListSize" elements from "shuffledList"
-    const newCompChoice = shuffledCompChoice.slice(0, newCompChoiceSize)
-    
-    console.log(newCompChoice);
-    */
-    
-   
-
-   function getComputerChoice(){
     let computerPossibleChoices = [1, 2, 3]
-    let randomComputerChoices =Math.floor(Math.random() * 3) + 1 ;
-
+    let randomComputerChoices = Math.floor(Math.random() * 3) + 1 ;
+    function getComputerChoice(){
     if (randomComputerChoices === computerPossibleChoices[1]){
-        return 'rock'
-    }
-    else if (randomComputerChoices === computerPossibleChoices[2]){
-        return 'paper'
-    }
-    else (randomComputerChoices === computerPossibleChoices[3]);{
-        return 'scissors'
+        return 'rock' ;
+    }else if (randomComputerChoices === computerPossibleChoices[2]){
+        return 'paper';
+    }else {
+        return 'scissors';
     }
    }
    
-   console.log(getComputerChoice());
+   
+  
+    let playerScoreCounter = 0
+   let compScoreCounter = 0
 
    function playRound(playerSelection, computerSelection){
-    
-    
-    if (playerSelection != computerSelection){
-    return "You lose! Paper beats Rock"
-    }
-    
-   }
-   console.log(playRound(/'roCK'/i, getComputerChoice()))
-
-  
    
+    if (playerSelection === computerSelection){
+    console.log('It\'s a TIE!');
+   
+   }
+   if (playerSelection === 'rock'){
+    if (computerSelection === 'paper'){
+        console.log(`The Computer Score is ${compScoreCounter += 1}`);
+        console.log('You lose! Paper Beats Rock');
+    }
+   }
+   if (playerSelection === 'rock'){
+        if (computerSelection === 'scissors'){
+            console.log(`Player Score is ${playerScoreCounter += 1}`);
+            console.log('You Win! Rock Beats Scissors');
+        }
+   }
+   if (playerSelection === 'paper'){
+    if (computerSelection === 'rock'){
+        console.log(`'Player Score is ${playerScoreCounter += 1}`);
+        console.log('You Win! Paper Beats Rock');
+    }
+   }
+   if (playerSelection === 'paper'){
+        if (computerSelection === 'scissors'){
+            console.log(`The Computer Score is' ${compScoreCounter += 1}`);
+        console.log('You lose! Scissors beat paper');
+        }
+   }
+   if (playerSelection === 'scissors'){
+    if (computerSelection === 'rock'){
+        console.log(`The Computer Score is  ${compScoreCounter += 1}`);
+        console.log('You lose! Rock beats Scissors');
+    }
+   }
+   if (playerSelection === 'scissors'){
+        if (computerSelection === 'paper'){
+            
+            console.log(`Player Score is ${playerScoreCounter += 1}`);
+            console.log('You Win! Scissors beat paper') ;     
+          }
+   }
+
+   }
+
+   console.log(playRound(prompt('please enter your WEAPON, LET\'S FIGHT'), getComputerChoice()))
+
+        let numberOfRounds = ""
+    function game(){
+    for (let i = 1; i < 5; i++){
+     numberOfRounds +=playRound(prompt('please enter your WEAPON, LET\'S FIGHT'), getComputerChoice());
+    }
+    if (playerScoreCounter > compScoreCounter){
+        console.log('YOU WIN THE OFFICAL CONTEST!');
+       }
+       if(playerScoreCounter < compScoreCounter){
+        console.log('You lost to computer...');
+       }
+       if(playerScoreCounter === compScoreCounter){
+        console.log('It\'s a Tie');
+    }
+}
+        
+    console.log(game());
