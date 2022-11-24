@@ -81,3 +81,6 @@
 }
         
     console.log(game());*/
+    
+    let rockbtn = document.getElementById('firstBox');
+    
