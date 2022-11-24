@@ -64,7 +64,7 @@
 
    console.log(playRound(prompt('please enter your WEAPON, LET\'S FIGHT'), getComputerChoice()))
 
-        let numberOfRounds = ""
+   /*     let numberOfRounds = ""
     function game(){
     for (let i = 1; i < 5; i++){
      numberOfRounds +=playRound(prompt('please enter your WEAPON, LET\'S FIGHT'), getComputerChoice());
@@ -80,4 +80,4 @@
     }
 }
         
-    console.log(game());
+    console.log(game());*/
