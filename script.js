@@ -1,5 +1,5 @@
 
-    let computerPossibleChoices = [1, 2, 3]
+    /*let computerPossibleChoices = [1, 2, 3]
     let randomComputerChoices = Math.floor(Math.random() * 3) + 1 ;
     function getComputerChoice(){
     if (randomComputerChoices === computerPossibleChoices[1]){
@@ -64,7 +64,7 @@
 
    console.log(playRound(prompt('please enter your WEAPON, LET\'S FIGHT'), getComputerChoice()))
 
-   /*     let numberOfRounds = ""
+   let numberOfRounds = ""
     function game(){
     for (let i = 1; i < 5; i++){
      numberOfRounds +=playRound(prompt('please enter your WEAPON, LET\'S FIGHT'), getComputerChoice());
