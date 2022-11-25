@@ -52,7 +52,7 @@ button{
 }
 #playerScore{
     font-size: 200px;
-    margin-left: 600px;
+    /*margin-left: 600px;*/
     color: whitesmoke;
 }
 #computerScore{
@@ -64,4 +64,9 @@ button{
     display: flex;
     justify-content: center;
     gap: 100px;
+}
+#scores, span{
+    display: flex;
+    justify-content: center;
+    gap: 400px;
 }
