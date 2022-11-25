@@ -16,7 +16,7 @@
     let playerScoreCounter = 0
    let compScoreCounter = 0
 
-   function playRound(playerSelection, computerSelection){
+   /*function playRound(playerSelection, computerSelection){
    
     if (playerSelection === computerSelection){
     console.log('It\'s a TIE!');
@@ -62,9 +62,9 @@
 
    }
 
-   console.log(playRound(prompt('please enter your WEAPON, LET\'S FIGHT'), getComputerChoice()))
+   console.log(playRound(prompt('please enter your WEAPON, LET\'S FIGHT'), getComputerChoice()))*/
 
-   let numberOfRounds = ""
+   /*let numberOfRounds = ""
     function game(){
     for (let i = 1; i < 5; i++){
      numberOfRounds +=playRound(prompt('please enter your WEAPON, LET\'S FIGHT'), getComputerChoice());
@@ -82,5 +82,11 @@
         
     console.log(game());*/
     
-    let rockbtn = document.getElementById('firstBox');
+    let rockBtn = document.getElementById('firstBox');
+    let playerScore = document.getElementById('playerScore');
+    let computerScore = document.getElementById('computerScore')
+    rockBtn.addEventListener("click", function() {
+        console.log('rock');
+      });
+    let paperBtn = document.getElementById('secondBox')
     
