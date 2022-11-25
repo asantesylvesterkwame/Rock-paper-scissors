@@ -1,5 +1,7 @@
 
-    /*let computerPossibleChoices = [1, 2, 3]
+    
+    
+    let computerPossibleChoices = [1, 2, 3]
     let randomComputerChoices = Math.floor(Math.random() * 3) + 1 ;
     function getComputerChoice(){
     if (randomComputerChoices === computerPossibleChoices[1]){
@@ -9,7 +11,7 @@
     }else {
         return 'scissors';
     }
-   }
+   };
    
    
   
@@ -85,8 +87,24 @@
     let rockBtn = document.getElementById('firstBox');
     let playerScore = document.getElementById('playerScore');
     let computerScore = document.getElementById('computerScore')
+    let playerCount = 0
+    
     rockBtn.addEventListener("click", function() {
         console.log('rock');
+        playerCount += 1;
+        playerScore.innerHTML = playerCount;
+        
       });
-    let paperBtn = document.getElementById('secondBox')
+    let paperBtn = document.getElementById('secondBox');
+    paperBtn.addEventListener('click', function() {
+        console.log('paper');
+        playerCount += 1;
+        playerScore.innerHTML = playerCount;
+    });
+    let scissorsBtn = document.getElementById('thirdBox');
+    scissorsBtn.addEventListener('click', function () {
+        console.log('scissors');
+        playerCount += 1;
+        playerScore.innerHTML = playerCount;
+    });
     
