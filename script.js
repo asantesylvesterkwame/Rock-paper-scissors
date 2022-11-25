@@ -1,6 +1,4 @@
 
-    
-    
     let computerPossibleChoices = [1, 2, 3]
     let randomComputerChoices = Math.floor(Math.random() * 3) + 1 ;
     function getComputerChoice(){
@@ -11,14 +9,14 @@
     }else {
         return 'scissors';
     }
-   };
+   }
    
    
   
     let playerScoreCounter = 0
    let compScoreCounter = 0
 
-   /*function playRound(playerSelection, computerSelection){
+   function playRound(playerSelection, computerSelection){
    
     if (playerSelection === computerSelection){
     console.log('It\'s a TIE!');
@@ -64,7 +62,7 @@
 
    }
 
-   console.log(playRound(prompt('please enter your WEAPON, LET\'S FIGHT'), getComputerChoice()))*/
+ console.log(playRound(document.getElementById(''), getComputerChoice()))
 
    /*let numberOfRounds = ""
     function game(){
@@ -84,27 +82,4 @@
         
     console.log(game());*/
     
-    let rockBtn = document.getElementById('firstBox');
-    let playerScore = document.getElementById('playerScore');
-    let computerScore = document.getElementById('computerScore')
-    let playerCount = 0
-    
-    rockBtn.addEventListener("click", function() {
-        console.log('rock');
-        playerCount += 1;
-        playerScore.innerHTML = playerCount;
-        
-      });
-    let paperBtn = document.getElementById('secondBox');
-    paperBtn.addEventListener('click', function() {
-        console.log('paper');
-        playerCount += 1;
-        playerScore.innerHTML = playerCount;
-    });
-    let scissorsBtn = document.getElementById('thirdBox');
-    scissorsBtn.addEventListener('click', function () {
-        console.log('scissors');
-        playerCount += 1;
-        playerScore.innerHTML = playerCount;
-    });
-    
+   
