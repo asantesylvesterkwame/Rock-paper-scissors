@@ -118,19 +118,22 @@
             if (playerScoreCounter === 5) {
                 if (compScoreCounter < 5) {
                     mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
-                    
+                    mainResults.style.cssText = 'color: green; font-size: 48px;';
+
                 }
             }
             if (playerScoreCounter < 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
-                    
+                    mainResults.style.cssText = 'color: red; font-size: 48px;';
+
                 }
             }
             if (playerScoreCounter === 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
-                    
+                    mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
+
                 }
             }
         }
@@ -143,19 +146,22 @@
             if (playerScoreCounter === 5) {
                 if (compScoreCounter < 5) {
                     mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
-                    
+                    mainResults.style.cssText = 'color: green; font-size: 48px;';
+
                 }
             }
             if (playerScoreCounter < 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
-                    
+                    mainResults.style.cssText = 'color: red; font-size: 48px;';
+
                 }
             }
             if (playerScoreCounter === 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
-                    
+                    mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
+
                 }
             }
         }
@@ -193,20 +199,22 @@
         liveResults.innerHTML = 'IT IS A TIE!';
         if (playerScoreCounter === 5) {
             if (compScoreCounter < 5) {
-                mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
-                
+                mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!';
+                mainResults.style.cssText = 'color: green; font-size: 48px;';
             }
         }
         if (playerScoreCounter < 5) {
             if (compScoreCounter === 5) {
-                mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
-                
+                mainResults.innerHTML = 'DAMN IT! YOU LOSE.';
+                mainResults.style.cssText = 'color: red; font-size: 48px;';
+
             }
         }
         if (playerScoreCounter === 5) {
             if (compScoreCounter === 5) {
                 mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
-                
+                mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
+
             }
         }
 
@@ -219,19 +227,22 @@
             if (playerScoreCounter === 5) {
                 if (compScoreCounter < 5) {
                     mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
-                    
+                    mainResults.style.cssText = 'color: green; font-size: 48px;';
+
                 }
             }
             if (playerScoreCounter < 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
-                    
+                    mainResults.style.cssText = 'color: red; font-size: 48px;';
+
                 }
             }
             if (playerScoreCounter === 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
-                    
+                    mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
+
                 }
             }
         }
@@ -244,19 +255,22 @@
             if (playerScoreCounter === 5) {
                 if (compScoreCounter < 5) {
                     mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
-                    
+                    mainResults.style.cssText = 'color: green; font-size: 48px;' ;
+
                 }
             }
             if (playerScoreCounter < 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
-                    
+                    mainResults.style.cssText = 'color: red; font-size: 48px;';
+
                 }
             }
             if (playerScoreCounter === 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
-                    
+                    mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
+
                 }
             }
         
@@ -295,19 +309,22 @@
         if (playerScoreCounter === 5) {
             if (compScoreCounter < 5) {
                 mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
-                
+                mainResults.style.cssText = 'color: green; font-size: 48px;';
+
             }
         }
         if (playerScoreCounter < 5) {
             if (compScoreCounter === 5) {
                 mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
-                
+                mainResults.style.cssText = 'color: red; font-size: 48px;';
+
             }
         }
         if (playerScoreCounter === 5) {
             if (compScoreCounter === 5) {
                 mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
-                
+                mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
+
             }
         }
 
@@ -320,19 +337,22 @@
             if (playerScoreCounter === 5) {
                 if (compScoreCounter < 5) {
                     mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
-                    
+                    mainResults.style.cssText = 'color: green; font-size: 48px;';
+
                 }
             }
             if (playerScoreCounter < 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
-                    
+                    mainResults.style.cssText = 'color: red; font-size: 48px;';
+
                 }
             }
             if (playerScoreCounter === 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
-                    
+                    mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
+
                 }
             }
         }
@@ -345,19 +365,22 @@
             if (playerScoreCounter === 5) {
                 if (compScoreCounter < 5) {
                     mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
-                    
+                    mainResults.style.cssText = 'color: green; font-size: 48px;';
+
                 }
             }
             if (playerScoreCounter < 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
-                    
+                    mainResults.style.cssText = 'color: red; font-size: 48px;';
+
                 }
             }
             if (playerScoreCounter === 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
-                    
+                    mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
+
                 }
             }
 
