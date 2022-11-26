@@ -78,7 +78,10 @@
    let compScore = document.getElementById('computerScore');
    let liveResults = document.getElementById('resultInfo');
    let mainResults = document.getElementById('mainResults');
-
+   let playAgainBtn = document.createElement('button');
+   let divForReplay = document.getElementById('playAgainBtn');
+   let linkToRefresh = document.createElement('a');
+   
    let playerScoreCounter = 0
    let compScoreCounter = 0
     
@@ -119,21 +122,41 @@
                 if (compScoreCounter < 5) {
                     mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
                     mainResults.style.cssText = 'color: green; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: green;';  
+    linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
             if (playerScoreCounter < 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
                     mainResults.style.cssText = 'color: red; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: red;'; 
+     linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
             if (playerScoreCounter === 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
                     mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: whitesmoke;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
         }
@@ -147,21 +170,39 @@
                 if (compScoreCounter < 5) {
                     mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
                     mainResults.style.cssText = 'color: green; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: green;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
             if (playerScoreCounter < 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
                     mainResults.style.cssText = 'color: red; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: red;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
             if (playerScoreCounter === 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
                     mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: whitesmoke;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
         }
@@ -201,20 +242,39 @@
             if (compScoreCounter < 5) {
                 mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!';
                 mainResults.style.cssText = 'color: green; font-size: 48px;';
+                divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: green;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
             }
         }
         if (playerScoreCounter < 5) {
             if (compScoreCounter === 5) {
                 mainResults.innerHTML = 'DAMN IT! YOU LOSE.';
                 mainResults.style.cssText = 'color: red; font-size: 48px;';
-
+                divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: red;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
             }
         }
         if (playerScoreCounter === 5) {
             if (compScoreCounter === 5) {
                 mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
                 mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
-
+                divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: whitesmoke;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
             }
         }
 
@@ -228,21 +288,39 @@
                 if (compScoreCounter < 5) {
                     mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
                     mainResults.style.cssText = 'color: green; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: green;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
             if (playerScoreCounter < 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
                     mainResults.style.cssText = 'color: red; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: red;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
             if (playerScoreCounter === 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
                     mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: whitesmoke;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
         }
@@ -256,21 +334,39 @@
                 if (compScoreCounter < 5) {
                     mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
                     mainResults.style.cssText = 'color: green; font-size: 48px;' ;
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: green;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
             if (playerScoreCounter < 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
                     mainResults.style.cssText = 'color: red; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: red;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
             if (playerScoreCounter === 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
                     mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-out; color: whitesmoke;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
         
@@ -310,21 +406,39 @@
             if (compScoreCounter < 5) {
                 mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
                 mainResults.style.cssText = 'color: green; font-size: 48px;';
-
+                divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-in-out; color: green;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
             }
         }
         if (playerScoreCounter < 5) {
             if (compScoreCounter === 5) {
                 mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
                 mainResults.style.cssText = 'color: red; font-size: 48px;';
-
+                divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-in-out; color: red;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
             }
         }
         if (playerScoreCounter === 5) {
             if (compScoreCounter === 5) {
                 mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
                 mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
-
+                divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-in-out; color: whitesmoke;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
             }
         }
 
@@ -338,21 +452,39 @@
                 if (compScoreCounter < 5) {
                     mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
                     mainResults.style.cssText = 'color: green; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-in-out; color: green;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
             if (playerScoreCounter < 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
                     mainResults.style.cssText = 'color: red; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-in-out; color: red;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
             if (playerScoreCounter === 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
                     mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-in-out; color: whitesmoke;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
         }
@@ -366,21 +498,39 @@
                 if (compScoreCounter < 5) {
                     mainResults.innerHTML = 'YOU ARE THE ULTIMATE WINNER!'
                     mainResults.style.cssText = 'color: green; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-in-out; color: green;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
             if (playerScoreCounter < 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'DAMN IT! YOU LOSE.'
                     mainResults.style.cssText = 'color: red; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-in-out; color: red;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
             if (playerScoreCounter === 5) {
                 if (compScoreCounter === 5) {
                     mainResults.innerHTML = 'IT\'S AN ULTIMATE TIE! Prove your worth.'
                     mainResults.style.cssText = 'color: whitesmoke; font-size: 48px;';
-
+                    divForReplay.appendChild(linkToRefresh);
+   linkToRefresh.appendChild(playAgainBtn);
+   playAgainBtn.appendChild(document.createTextNode('Click Here To Play Again'));
+   playAgainBtn.style.cssText = 'border-radius: 400px; font-size: 24px; font-family: poppins, sanserif; background-color: greenyellow; ';
+   divForReplay.style.cssText = 'transform: scale(2, 2); transition: all 2s ease-out; display: flex; justify-content: center; margin-bottom: -150px;'
+   mainResults.style.cssText = 'transform: translate(0px,50px); transition: all 2s ease-in-out; color: whitesmoke;';   linkToRefresh.setAttribute('href','index.html');
+   linkToRefresh.style.cssText = 'text-decoration: none;';
                 }
             }
 
