@@ -76,6 +76,7 @@
    let userScissors = document.getElementById('thirdBox');
    let userScore = document.getElementById('playerScore');
    let compScore = document.getElementById('computerScore');
+   let liveResults = document.getElementById('resultInfo');
    let playerScoreCounter = 0
    let compScoreCounter = 0
     userRock.addEventListener('click', function () {
@@ -104,17 +105,22 @@
         userScore.innerHTML = playerScoreCounter;
         compScoreCounter += 0;
         compScore.innerHTML = compScoreCounter;
+        liveResults.innerHTML = 'IT IS A TIE!';
        }
        if (getComputerChoice() === 'paper') {
         if (rockBtnChoice === 'rock') {
             compScoreCounter += 1;
-            compScore.innerHTML = compScoreCounter;            
+            compScore.innerHTML = compScoreCounter;  
+            liveResults.innerHTML = 'You Lose! Paper beats Rock';
+          
         }
       }
        if (getComputerChoice() === 'scissors') {
         if (rockBtnChoice === 'rock') {
             playerScoreCounter += 1;
-            userScore.innerHTML = playerScoreCounter;            
+            userScore.innerHTML = playerScoreCounter;   
+            liveResults.innerHTML = 'You Win! Rock Beats Scissors';
+         
         }
        }
 
@@ -146,17 +152,23 @@
         userScore.innerHTML = playerScoreCounter;
         compScoreCounter += 0;
         compScore.innerHTML = compScoreCounter;
+        liveResults.innerHTML = 'IT IS A TIE!';
+
        }
        if (getComputerChoice() === 'rock') {
         if (paperBtnChoice === 'paper') {
             playerScoreCounter += 1;
-            userScore.innerHTML = playerScoreCounter;            
+            userScore.innerHTML = playerScoreCounter;  
+            liveResults.innerHTML = 'You Win! Paper Beats Rock';
+          
         }
       }
        if (getComputerChoice() === 'scissors') {
         if (paperBtnChoice === 'paper') {
             compScoreCounter += 1;
-            compScore.innerHTML = compScoreCounter;            
+            compScore.innerHTML = compScoreCounter;    
+            liveResults.innerHTML = 'You Lose! Scissors beat Paper';
+        
         }
        }
 
@@ -188,17 +200,22 @@
         userScore.innerHTML = playerScoreCounter;
         compScoreCounter += 0;
         compScore.innerHTML = compScoreCounter;
+        liveResults.innerHTML = 'IT IS A TIE!';
+
        }
        if (getComputerChoice() === 'paper') {
         if (scissorsBtnChoice === 'scissors') {
             playerScoreCounter += 1;
-            userScore.innerHTML = playerScoreCounter;            
+            userScore.innerHTML = playerScoreCounter; 
+            liveResults.innerHTML = 'You Win! Scissors Beat Paper';           
         }
       }
        if (getComputerChoice() === 'rock') {
         if (scissorsBtnChoice === 'scissors') {
             compScoreCounter += 1;
             compScore.innerHTML = compScoreCounter;            
+            liveResults.innerHTML = 'You Lose! Rock Beats Scissors';
+
         }
        }
 
