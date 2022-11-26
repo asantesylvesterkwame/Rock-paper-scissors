@@ -70,3 +70,8 @@ button{
     justify-content: center;
     gap: 400px;
 }
+#resultinfo, div{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 24px;
+}
